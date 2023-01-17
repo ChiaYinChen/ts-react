@@ -1,5 +1,12 @@
+import Header from "components/header/Header";
+
 const NotFound: React.FC = () => {
-  return <p>Page Not Found</p>;
+  return (
+    <>
+      <Header />
+      <p>Page Not Found</p>
+    </>
+  );
 };
 
 export default NotFound;

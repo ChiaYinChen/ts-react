@@ -1,5 +1,11 @@
+import Header from "components/header/Header";
+
 const Following: React.FC = () => {
-  return <p>Following</p>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default Following;
