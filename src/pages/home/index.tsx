@@ -1,5 +1,6 @@
 import Header from "components/header/Header";
 import Container from "components/container/Container";
+import Story from "components/story/Story";
 
 const Home: React.FC = () => {
   return (
@@ -9,7 +10,7 @@ const Home: React.FC = () => {
         <div className="flex lg:justify-center">
           {/* left */}
           <div className="w-full lg:w-[600px]">
-            {/* <IGStory /> */}
+            <Story />
             left
           </div>
           {/* right */}
