@@ -1,7 +1,7 @@
 import Header from "components/header/Header";
 import Container from "components/container/Container";
-import Story from "components/story/Story";
-import User from "components/user/User";
+import Story from "components/home/story/Story";
+import User from "components/home/user/User";
 
 const Home: React.FC = () => {
   return (
