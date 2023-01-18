@@ -1,6 +1,7 @@
 import Header from "components/header/Header";
 import Container from "components/container/Container";
 import Story from "components/story/Story";
+import User from "components/user/User";
 
 const Home: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ const Home: React.FC = () => {
           {/* right */}
           <div className="hidden lg:block lg:w-[424px]">
             {/* <IGProfile /> */}
-            right
+            <User avatar="/images/avatars/a2.png" size="medium" account="user1" location="Taipei" showFollow={true} isFollowing={true} />
           </div>
         </div>
       </Container>
