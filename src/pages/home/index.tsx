@@ -2,6 +2,7 @@ import Header from "components/header/Header";
 import Container from "components/container/Container";
 import Story from "components/home/story/Story";
 import User from "components/home/user/User";
+import PostList from "components/home/post/PostList";
 
 const Home: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ const Home: React.FC = () => {
           {/* left */}
           <div className="w-full lg:w-[600px]">
             <Story />
-            left
+            <PostList />
           </div>
           {/* right */}
           <div className="hidden lg:block lg:w-[424px]">
