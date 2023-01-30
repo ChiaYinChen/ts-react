@@ -6,6 +6,18 @@ type Story = {
   avatar: string;
 };
 
+type Post = {
+  id: number;
+  location: string;
+  account: string;
+  avatar: string;
+  photo: string;
+  likes: number;
+  description: string;
+  hashTags: string;
+  createTime: string;
+};
+
 export const homeApi = createApi({
   reducerPath: "homeApi",
   baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3004/" }),
@@ -18,7 +30,15 @@ export const homeApi = createApi({
         return "stories";
       },
     }),
+    getPosts: builder.query<Post[], number | "all">({
+      query: (id) => {
+        if (id !== "all") {
+          return `posts/${id}`;
+        }
+        return "posts";
+      },
+    }),
   }),
 });
 
-export const { useGetStoiesQuery } = homeApi;
+export const { useGetStoiesQuery, useGetPostsQuery } = homeApi;
