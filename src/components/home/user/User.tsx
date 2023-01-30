@@ -3,6 +3,8 @@ import { useAppDispatch } from "../../../hooks";
 // action
 import { follow, unFollow } from "../../../slices/friendSlices";
 
+import { memo } from "react";
+
 type IGUserProps = {
   size?: "medium" | "small";
   showFollow?: boolean;
@@ -13,7 +15,7 @@ type IGUserProps = {
   id?: number;
 };
 
-const User: React.FC<IGUserProps> = (
+const User: React.FC<IGUserProps> = memo((
   {
     size = "small",
     showFollow = false,
@@ -63,6 +65,6 @@ const User: React.FC<IGUserProps> = (
       )}
     </div>
   );
-};
+});
 
 export default User;
