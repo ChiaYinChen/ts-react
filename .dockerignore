@@ -1,0 +1,8 @@
+Dockerfile
+.dockerignore
+build
+node_modules
+**/.git
+.gitignore
+.DS_Store
+Makefile
